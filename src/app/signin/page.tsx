@@ -1,12 +1,9 @@
 'use client'
 
-import { signIn } from '@/app/api/auth/signIn'
+import { signIn } from '../../api/auth/signIn'
 import { FormEvent } from 'react'
-// import { useRouter } from 'next/navigation'
  
-export default function SignInPage() {
-//   const router = useRouter()
- 
+export default function SignInPage() { 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
  

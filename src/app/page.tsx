@@ -1,3 +1,11 @@
+'use client'
+
+import { PublicHeader } from '@/components/PublicHeader';
+
 export default function Page() {
-    return <h1>Hello, Next.js!</h1>;
-  }
+  return (
+    <div>
+      <h1>Home</h1>
+    </div>
+  );
+}

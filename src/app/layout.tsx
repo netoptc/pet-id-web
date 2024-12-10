@@ -1,3 +1,8 @@
+import StyledComponentsRegistry from "@/lib/registry"
+import ThemeClient from "./theme"
+
+import '../styles/global.css'
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +10,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+          <ThemeClient>
+            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          </ThemeClient>
+      </body>
     </html>
   )
 }
